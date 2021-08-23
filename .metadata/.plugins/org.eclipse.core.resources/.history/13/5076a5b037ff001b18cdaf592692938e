@@ -1,0 +1,28 @@
+/**
+ * Validation of form fields
+ * @Israel Diniz
+ */
+
+function validate(){
+	let fnome = frmReferral.txt_firstname.value
+	let lnome = frmReferral.txt_lasttname.value
+	let role = frmReferral.txt_role.value
+	let phone = frmReferral.txt_phone.value
+	let email = frmReferral.txt_email.value
+	let refnumber = frmReferral.txt_refnumber.value
+	let hearabout = frmReferral.txt_hear.value
+	let datebirth = frmReferral.txt_dbirth.value
+	let todo = frmReferral.txt_todo.value 
+	let pdiag = frmReferral.txt_pdiagnosis.value 
+	let sdiag = frmReferral.txt_sdiagnosis.value 
+	let weekhours = frmReferral.float_hours.value 
+	let reason = frmReferral.txt_reasonref.value 
+	let funding = frmReferral.txt_fundingbody.value 
+	let draty = frmReferral.txt_draty.value 
+	let location = frmReferral.txt_preflocation.value 
+	let acomneeds = frmReferral.txt_acomneeds.value 
+	let dstart = frmReferral.txt_dstart.value 
+	
+txt_dstart	
+	
+}

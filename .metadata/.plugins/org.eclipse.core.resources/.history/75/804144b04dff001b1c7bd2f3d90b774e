@@ -1,0 +1,91 @@
+package model;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+
+
+public class DAO {
+	private String driver = "com.mysql.cj.jdbc.Driver";
+	private String url = "jdbc:mysql://127.0.0.1:3306/bdauto?useTimezone=true&serverTimezone=UTC";
+	private String user = "root";
+	private String password = "Qwerty12";
+
+	private Connection connect() {
+		Connection con = null;
+
+		try {
+			Class.forName(driver);
+			con = DriverManager.getConnection(url, user, password);
+			return con;
+		} catch (Exception e) {
+			System.out.println(e);
+			return null;
+		}
+	}
+
+	// connection test
+	public void connectionTest() {
+		try {
+			Connection con = connect();
+			System.out.println(con);
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+	public void insertReferral(JavaBeans referral) {
+		String create = "insert into referals (firstnameref,lastnameref,prole,mainphone,email,"
+				+ "hearaboutus,refnumber,datebirth,lovetodo,primarydiagnosis,seconddiagnosis,weekhours,"
+				+ "reasonref,fundingbody,tierredraty,preflocation,acomneeds,startdate) values (?, ?, ?, ?, ?, ?, ?,TO_DATE(?), ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		try {
+			// Open connection
+			Connection con = connect();
+
+			// Prepare query to execute in our DB
+			PreparedStatement pst = con.prepareStatement(create);
+			
+			// Formate date data received from our form to send to our database
+			/*SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		    String dob = sdf.format(referral.getWdatebirth());
+		    String dos = sdf.format(referral.getWdatestart());
+		    System.out.println(dob);
+		    System.out.println(dos);*/
+
+			
+		    
+			
+			// Substitute the parameters por the content in our variables
+			pst.setString(1, referral.getFirstname());
+			pst.setString(2, referral.getLastname());
+			pst.setString(3, referral.getWrole());
+			pst.setString(4, referral.getWphone());
+			pst.setString(5, referral.getWemail());
+			pst.setString(6, referral.getWhear());
+			pst.setString(7, referral.getWrefnumber());	
+			pst.setObject(8, referral.getWdatebirth());
+			pst.setString(9, referral.getWtodo());
+			pst.setString(10, referral.getWpdiagnosis());
+			pst.setString(11, referral.getWsdiagnosis());
+			pst.setString(12, referral.getWeekhours());
+			pst.setString(13, referral.getWreasonref());
+			pst.setString(14, referral.getWfunding());
+			pst.setString(15, referral.getWdraty());
+			pst.setString(16, referral.getWplocation());
+			pst.setString(17, referral.getWacomneeds());
+			pst.setString(18, referral.getWdatestart());
+
+			// Execute query and insert data in our database
+			pst.executeUpdate();
+
+			// Close connection with our database
+			con.close();
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+
+}

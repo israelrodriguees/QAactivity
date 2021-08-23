@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Referral list</title>
+<link rel="icon" href="images/form.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Referrals agend</h1>
+	<a href="" >New referral</a>
+</body>
+</html>

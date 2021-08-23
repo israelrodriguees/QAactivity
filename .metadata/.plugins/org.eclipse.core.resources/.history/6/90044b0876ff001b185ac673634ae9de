@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ page import="model.JavaBeans"%>
+<%@ page import="java.util.ArrayList"%>
+
+<%
+@SuppressWarnings("unchecked")
+ArrayList<JavaBeans> list = (ArrayList<JavaBeans>) 
+request.getAttribute("referrals");
+for (int i = 1; i < list.size(); i++) {
+	out.println(list.get(i).getEnqnumber());
+	out.println(list.get(i).getFirstname());
+	out.println(list.get(i).getLastname());
+	out.println(list.get(i).getWrole());
+	out.println(list.get(i).getWphone());
+	out.println(list.get(i).getWemail());
+	out.println(list.get(i).getWhear());
+	out.println(list.get(i).getWdatebirth());
+	out.println(list.get(i).getWtodo());
+	out.println(list.get(i).getWpdiagnosis());
+	out.println(list.get(i).getWsdiagnosis());
+	out.println(list.get(i).getWeekhours());
+	out.println(list.get(i).getWreasonref());
+	out.println(list.get(i).getWfunding());
+	out.println(list.get(i).getWdraty());
+	out.println(list.get(i).getWplocation());
+	out.println(list.get(i).getWacomneeds());
+	out.println(list.get(i).getWdatestart());
+}
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Referral list</title>
+<link rel="icon" href="images/form.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Referrals agend</h1>
+	<a href="new_referral.jsp" class="button1">New referral</a>
+</body>
+</html>
