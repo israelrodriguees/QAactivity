@@ -20,7 +20,7 @@
 			</tr>
 
 			<tr>
-				<td><label class="Box3" padding="5px">Role:</label>&nbsp; <select name="txt_role">
+				<td><label class="Box3">Role:</label>&nbsp; <select name="txt_role">
 						<option value="Family">Family member</option>
 						<option value="Advocate">Advocate</option>
 						<option value="Social Worker">Social worker</option>

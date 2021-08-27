@@ -5,29 +5,7 @@
 
 <%
 @SuppressWarnings("unchecked")
-ArrayList<JavaBeans> list = (ArrayList<JavaBeans>) 
-request.getAttribute("referrals");
-
-for (int i = 0; i < list.size(); i++) {
-	out.println(list.get(i).getEnqnumber());
-	out.println(list.get(i).getFirstname());
-	out.println(list.get(i).getLastname());
-	out.println(list.get(i).getWrole());
-	out.println(list.get(i).getWphone());
-	out.println(list.get(i).getWemail());
-	out.println(list.get(i).getWhear());
-	out.println(list.get(i).getWdatebirth());
-	out.println(list.get(i).getWtodo());
-	out.println(list.get(i).getWpdiagnosis());
-	out.println(list.get(i).getWsdiagnosis());
-	out.println(list.get(i).getWeekhours());
-	out.println(list.get(i).getWreasonref());
-	out.println(list.get(i).getWfunding());
-	out.println(list.get(i).getWdraty());
-	out.println(list.get(i).getWplocation());
-	out.println(list.get(i).getWacomneeds());
-	out.println(list.get(i).getWdatestart());
-}
+ArrayList<JavaBeans> list = (ArrayList<JavaBeans>) request.getAttribute("referrals");
 %>
 
 <!DOCTYPE html>
@@ -41,6 +19,7 @@ for (int i = 0; i < list.size(); i++) {
 <body>
 	<h1>Referrals</h1>
 	<a href="new_referral.jsp" class="button1">New referral</a>
+	<a href="report" class="button2">PDF</a>
 	<table id="table">
 		<thead>
 			<tr>
@@ -59,32 +38,42 @@ for (int i = 0; i < list.size(); i++) {
 				<th>D raty</th>
 				<th>Accomodation needs</th>
 				<th>Date of start</th>
+				<th>Options</th>
 			</tr>
 		</thead>
 		<tbody>
-				<%
-					for(int j = 0; j < list.size(); j++){ %>
-						<tr>
-							<td><%=list.get(j).getEnqnumber() %></td>
-							<td><%=list.get(j).getFirstname() %></td>
-							<td><%=list.get(j).getLastname() %></td>
-							<td><%=list.get(j).getWrole() %></td>
-							<td><%=list.get(j).getWphone() %></td>
-							<td><%=list.get(j).getWemail() %></td>
-							<td><%=list.get(j).getWdatebirth() %></td>
-							<td><%=list.get(j).getWpdiagnosis() %></td>
-							<td><%=list.get(j).getWsdiagnosis() %></td>
-							<td><%=list.get(j).getWeekhours() %></td>
-							<td><%=list.get(j).getWreasonref() %></td>
-							<td><%=list.get(j).getWfunding() %></td>
-							<td><%=list.get(j).getWdraty() %></td>
-							<td><%=list.get(j).getWacomneeds() %></td>
-							<td><%=list.get(j).getWdatestart() %></td>
-						</tr>
-					<% } %>
-				
-		</tbody>
+			<%
+			for (int j = 0; j < list.size(); j++) {
+			%>
+			<tr>
+				<td><%=list.get(j).getEnqnumber()%></td>
+				<td><%=list.get(j).getFirstname()%></td>
+				<td><%=list.get(j).getLastname()%></td>
+				<td><%=list.get(j).getWrole()%></td>
+				<td><%=list.get(j).getWphone()%></td>
+				<td><%=list.get(j).getWemail()%></td>
+				<td><%=list.get(j).getWdatebirth()%></td>
+				<td><%=list.get(j).getWpdiagnosis()%></td>
+				<td><%=list.get(j).getWsdiagnosis()%></td>
+				<td><%=list.get(j).getWeekhours()%></td>
+				<td><%=list.get(j).getWreasonref()%></td>
+				<td><%=list.get(j).getWfunding()%></td>
+				<td><%=list.get(j).getWdraty()%></td>
+				<td><%=list.get(j).getWacomneeds()%></td>
+				<td><%=list.get(j).getWdatestart()%></td>
+				<td><a href="select?idcon=<%=list.get(j).getEnqnumber()%>"
+					class="button1">Edit</a></td>
 
+				<td><a
+					href="delete?idcon=<%=list.get(j).getEnqnumber()%>"
+					class="button2">Delete</a></td>
+			</tr>
+			<%
+			}
+			%>
+		</tbody>
 	</table>
+
+	<script src="scripts/confirm.js"></script>
 </body>
 </html>

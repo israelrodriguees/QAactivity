@@ -14,4 +14,10 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.Document"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.pdf.PdfWriter"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.Paragraph"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.pdf.PdfPTable"/>
+    <fullyQualifiedTypeName name="com.itextpdf.text.pdf.PdfPCell"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.Table"/>
 </qualifiedTypeNameHistroy>

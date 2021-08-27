@@ -1,8 +1,0 @@
-/**
- * Validation of form fields
- * @Israel Diniz
- */
-
-function validate(){
-	alert('test')
-}

@@ -1,5 +1,5 @@
 /**
- * Validation of form fields
+ * Validation required fields from referral form
  * @Israel Diniz
  */
 
@@ -23,7 +23,7 @@ function validate() {
 	let acomneeds = frmReferral.txt_acomneeds.value
 	let dstart = frmReferral.txt_dstart.value
 
-	/*if (fnome === "" || lnome === "") {
+	if (fnome === "" || lnome === "") {
 		alert('Please insert a first name and a last name')
 	} else if (isNaN(phone)) {
 		alert('Please insert a valid phone number')
@@ -55,8 +55,5 @@ function validate() {
 		alert('Please insert the preferred service start date')
 	} else{
 		document.forms["frmReferral"].submit()
-	}*/
-	
-	alert(fnome + " " + lnome + " " + role +  " " + phone +  " " + email +  " " + refnumber +  " " + hearabout + " " + datebirth + " " + todo + " " + pdiag + " " + sdiag + " " + weekhours + " " + reason + " " + funding + " " + draty + " " + location + " " + acomneeds + " " +dstart)
-	document.forms["frmReferral"].submit()
+	}
 }
