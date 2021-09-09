@@ -12,11 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 import model.DAO;
 import model.JavaBeans;
 
-// TODO: Auto-generated Javadoc
 /**
  * Servlet implementation class Controller.
  */
-@WebServlet(urlPatterns = { "/Controller", "/main", "/insert", "/select", "/update", "/delete", "/report" })
+@WebServlet(urlPatterns = { "/Controller", "/main", "/insert", "/select", "/update", "/delete"})
 public class Controller extends HttpServlet {
 	
 	/** The Constant serialVersionUID. */
@@ -58,8 +57,6 @@ public class Controller extends HttpServlet {
 		} else if (action.equals("/update")) {
 			editReferral(request, response);
 		} else if (action.equals("/delete")) {
-			deleteReferral(request, response);
-		} else if (action.equals("/report")) {
 			deleteReferral(request, response);
 		} else {
 			response.sendRedirect("index.html");

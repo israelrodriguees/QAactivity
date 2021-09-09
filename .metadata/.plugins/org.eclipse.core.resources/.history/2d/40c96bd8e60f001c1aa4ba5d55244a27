@@ -1,0 +1,119 @@
+@charset "ISO-8859-1";
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap')
+	;
+
+body {
+	font-family: 'Open Sans', sans-serif;;
+	font-size: 1em;
+	font-weight: 400;
+}
+
+h1 {
+	color: #f8a4a4;
+}
+
+.divHP{
+	text-align: center;
+	margin: auto;
+	padding: 15px 5px 15px 5px;
+}
+
+#TS{
+	height: 50%;
+	width: 50%;
+	text-align: center;
+}
+
+small {
+	color: #FFFFFF;
+}
+
+#page{
+    display: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.2fr;
+    grid-gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+}
+
+.button1 {
+	text-decoration: none;
+	text-align: center;
+	background-color: #f8a4a4;
+	padding: 10px 20px 10px 20px;
+	color: #4d4d4d;
+	font-size: 1.2em;
+	font-weight: 700;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+	width: 100px;
+	height: 30px;
+	margin: auto;
+
+}
+
+.button2 {
+	text-decoration: none;
+	background-color: #d51213;
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 700;
+	border-radius: 5px;
+}
+
+.Box1 {
+	width: 800px;
+	padding: 15px;
+	margin-bottom: 10px;
+	border: 1px solid #66bbff;
+	border-radius: 5px;
+}
+
+.Box2 {
+	width: 800px;
+	height: 200px;
+	padding: 15px;
+	margin-bottom: 10px;
+	border: 1px solid #66bbff;
+	border-radius: 5px;
+}
+
+#Box3 {
+	padding: 15px;
+	margin-bottom: 10px;
+	border: 1px solid #ff0000;
+	border-radius: 5px;
+}
+
+#table {
+	margin-top: 30px;
+	border-collapse: collapse;
+}
+
+#table th {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: left; background-color : #66bbff;
+	color: #fff;
+	background-color: #66bbff;
+}
+
+#table td {
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}

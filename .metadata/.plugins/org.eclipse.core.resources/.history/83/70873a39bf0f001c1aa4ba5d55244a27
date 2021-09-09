@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Referral Form</title>
+<link rel="icon" href="images/form.png">
+<link rel="stylesheet" href="style.css">
+<style>
+h1 {
+	postion: absolute;
+	margin: auto;
+	text-allign: center;
+}
+
+h3 {
+	
+}
+
+div {
+	text-align: center;
+	margin: auto;
+	padding: 30 5px 30px 5px;;
+}
+</style>
+</head>
+<body>
+	<div id="page">
+		<header>
+			<div class="divHP" style="background-color: #000000;">
+				<img id="TS" src="images/transforming-support-horizontal.png">
+			</div>
+		</header>
+		<main>
+			<div class="divHP">
+				<h1 style="color: #4d4d4d;">Register referral</h1>
+			</div>
+			<div class="divHP">
+				<img src="images/bigform.png">
+			</div>
+			<div class="divHP">
+				<a href="main" class="button1">Access</a>
+			</div>
+
+		</main>
+		<footer style="background-color: #4d4d4d;">
+			<div>
+				<small> Copyright © 2019. Pathway for Care Ltd - Company
+					Number: 10339398 </small>
+			</div>
+
+		</footer>
+	</div>
+
+</body>
+</html>

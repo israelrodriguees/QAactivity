@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Referral Form</title>
+<link rel="icon" href="images/form.png">
+<link rel="stylesheet" href="style.css">
+<style>
+h1 {
+	postion: absolute;
+	margin: auto text-allign: center;
+}
+
+div{
+	text-align: center;
+	margin: auto;
+}
+
+
+
+</style>
+</head>
+<body>
+	<div id="page">
+		<header>
+			<div id="divlogo">
+				<img id="TS" src="images/transforming-support-horizontal.png">
+			</div>
+		</header>
+		<main>
+			<div>
+				<h1>Register referral</h1>
+			</div>
+			<div>
+				<img src="images/bigform.png">
+			</div>
+			<div>
+				<a href="main" class="button1">Access</a>
+			</div>
+			
+		</main>
+		<footer>
+			<h2>Israel</h2>
+		</footer>
+	</div>
+
+</body>
+</html>
