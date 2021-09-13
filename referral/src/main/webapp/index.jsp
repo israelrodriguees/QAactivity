@@ -36,7 +36,7 @@ footer {
 
 		</main>
 		<footer>
-			<small>Copyright © 2019. Pathway for Care Ltd - Company
+			<small>Copyright © 2021. Transforming Support - Company
 				Number: 10339398 </small>
 		</footer>
 	</div>

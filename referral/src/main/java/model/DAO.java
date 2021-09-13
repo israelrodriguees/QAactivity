@@ -16,13 +16,13 @@ public class DAO {
 	private String driver = "com.mysql.cj.jdbc.Driver";
 	
 	/** The url. */
-	private String url = "jdbc:mysql://127.0.0.1:3306/dbreferals?useTimezone=true&serverTimezone=UTC";
+	private String url = "jdbc:mysql://node78438-env-3081414.jelastic.saveincloud.ne:3306/dbreferals";
 	
 	/** The user. */
 	private String user = "root";
 	
 	/** The password. */
-	private String password = "Qwerty12";
+	private String password = " mern58SJEt";
 
 	/**
 	 * Connect.

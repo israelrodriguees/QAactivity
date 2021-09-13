@@ -1,0 +1,86 @@
+@charset "ISO-8859-1";
+
+@import "style.css";
+
+@media only screen and (min-width: 1430px) and (max-width: 1604px) {
+	#table {
+		font-size: 15px;
+	}
+	#table thead, tr {
+		font-size: 15px;
+	}
+	#table td {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1430px) {
+	#divTable {
+		overflow: auto;
+	}
+	
+	#table {
+		font-size: 12px;
+	}
+	#table thead, tr {
+		font-size: 12px;
+	}
+	#table td {
+		font-size: 12px;
+	}
+}
+
+
+
+@media only screen and (min-width: 1050px)  and (max-width: 1200px) {
+	#divTable {
+		width: 900px;
+		overflow:auto;
+	}
+	#table {
+		font-size: 10px;
+		font-weight: bold;
+		white-space: pre;
+	}
+	#table thead, tr {
+		font-size: 10px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+	#table td {
+		font-size: 10px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+	input.Box1 {
+		resize: horizontal;
+		width: 500px;
+	}
+	input.Box2 {
+		width: 500px;
+		height: 50px;
+	}
+}
+
+@media only screen and (min-width: 530px) and (max-width: 570px) {
+	input.Box1 {
+		resize: horizontal;
+		width: 420px;
+	}
+	input.Box2 {
+		width: 420px;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+
+	
+	input.Box1 {
+		resize: horizontal;
+		width: 200px;
+	}
+	input.Box2 {
+		width: 200px;
+		height: 50px;
+	}
+}

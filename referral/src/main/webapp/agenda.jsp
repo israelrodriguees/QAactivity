@@ -14,12 +14,8 @@ ArrayList<JavaBeans> list = (ArrayList<JavaBeans>) request.getAttribute("referra
 <meta charset="ISO-8859-1">
 <title>Referral list</title>
 <link rel="icon" href="images/form.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mq.css">
 <style>
-#divTable{
-	height: 70%;
-	overflow: auto;
-}
 footer {
 	background-color: #4d4d4d;
 	grid-area: footer;
@@ -47,8 +43,8 @@ footer {
 					<table id="table">
 						<thead>
 							<tr>
-								<th>ID</th>
-								<th>First name</th>
+								<th class="tablecell">ID</th>
+								<th class="tablecell">First name</th>
 								<th>Last name</th>
 								<th>Role</th>
 								<th>Phone</th>
@@ -60,7 +56,7 @@ footer {
 								<th>Reason</th>
 								<th>Funding body</th>
 								<th>D raty</th>
-								<th>Accomodation needs</th>
+								<th class="tablecell">Accomodation needs</th>
 								<th>Date of start</th>
 								<th>Options</th>
 							</tr>
@@ -102,8 +98,8 @@ footer {
 			<script src="scripts/confirm.js"></script>
 		</main>
 		<footer>
-			<p>Copyright © 2019. Pathway for Care Ltd - Company
-				Number: 10339398 </p>
+			<p>Copyright © 2021. Transforming Support - Company Number:
+				10339398</p>
 		</footer>
 	</div>
 </body>

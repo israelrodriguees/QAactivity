@@ -155,7 +155,7 @@ footer {
 		</main>
 		<footer style="background-color: #4d4d4d;">
 			<div class="divHP">
-				<small> Copyright © 2019. Pathway for Care Ltd - Company
+				<small> Copyright © 2021. Transforming Support - Company
 					Number: 10339398 </small>
 			</div>
 		</footer>

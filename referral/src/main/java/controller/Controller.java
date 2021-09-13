@@ -232,6 +232,5 @@ public class Controller extends HttpServlet {
 		// Redirect to the "agenda.jsp" document, updating the changes
 		response.sendRedirect("main");
 	}
-
 }
 

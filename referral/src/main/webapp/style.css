@@ -1,5 +1,7 @@
 @charset "ISO-8859-1";
 
+@import "mq.css";
+
 @import
 	url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap')
 	;
@@ -9,6 +11,7 @@ body {
 	font-size: 1em;
 	font-weight: 400;
 	margin: 0;
+	overflow: hidden;
 }
 
 h1 {
@@ -31,10 +34,10 @@ h1 {
 
 #page {
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 0.3fr 0.7fr 0.2fr;
+	grid-template-columns: 2fr;
+	grid-template-rows: 0.2fr auto 0.2fr;
 	grid-gap: 3px;
-	width: 100vw;
+	width: 99vw;
 	height: 100vh;
 	grid-template-areas: "header" "main" "footer";
 }
@@ -44,7 +47,7 @@ footer {
 	grid-area: footer;
 	color: #ffffff;
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 20px;
 }
 
 .image-container {
@@ -62,12 +65,14 @@ footer {
 	border: #4d4d4d;
 	border-width: 2px;
 	margin: 0 auto;
+	width: 95%;
 }
 
 #TS {
-	height: 50%;
-	width: 50%;
+	height: 30%;
+	width: 30%;
 	text-align: center;
+	padding: 15px;
 }
 
 .button1 {
@@ -126,21 +131,30 @@ footer {
 	overflow: auto;
 	justify-content: center;
 	align-items: center;
+	font-size: 10px;
+	font-weight: bold;
+	white-space: pre;
 }
 
 #table th {
 	border: 1px solid #4d4d4d;
-	padding: 10px;
+	padding: 0px;
 	text-align: left;
 	color: #4d4d4d;
 	background-color: #f8a4a4;
 }
 
+#table tr {
+	padding: 0px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
 #table td {
 	border: 1px solid #4d4d4d;
 	padding: 10px;
+	font-size: 12px;
 }
-
 
 select {
 	-webkit-appearance: none;

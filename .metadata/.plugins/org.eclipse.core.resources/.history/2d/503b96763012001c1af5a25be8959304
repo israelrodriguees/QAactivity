@@ -1,0 +1,144 @@
+@charset "ISO-8859-1";
+
+@import "style.css";
+
+@media only screen and (max-width: 1604px) {
+	#table {
+		font-size: 15px;
+	}
+	#table thead, tr {
+		font-size: 15px;
+	}
+	#table td {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 1430px) {
+	#table {
+		font-size: 12px;
+	}
+	#table thead, tr {
+		font-size: 12px;
+	}
+	#table td {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 1207px) {
+	#divTable {
+		width: 1100px;
+		overflow: auto;
+	}
+	#table {
+		font-size: 11px;
+		font-weight: bold;
+		white-space: pre;
+	}
+	#table thead, tr {
+		font-size: 11px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+	#table td {
+		font-size: 11px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+}
+
+@media only screen and (max-width: 1105px) {
+	#divTable {
+		width: 900px;
+		overflow: scroll;
+	}
+	#table {
+		font-size: 9px;
+		font-weight: bold;
+		white-space: pre;
+	}
+	#table thead, tr {
+		font-size: 9px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+	#table td {
+		font-size: 9px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	#divTable {
+		width: 850px;
+		overflow: scroll;
+	}
+	#table {
+		font-size: 9px;
+		font-weight: bold;
+		white-space: pre;
+	}
+	#table thead, tr {
+		font-size: 9px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+	#table td {
+		font-size: 9px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	#divTable {
+		width: 750px;
+		overflow: scroll;
+	}
+	#table {
+		font-size: 9px;
+		font-weight: bold;
+		white-space: pre;
+	}
+	#table thead, tr {
+		font-size: 9px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+	#table td {
+		font-size: 9px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+	.Box1 {
+		width: 500px;
+		padding: 15px;
+		margin-bottom: 10px;
+		border: 1px solid #f8a4a4;
+		border-radius: 5px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	#divTable {
+		width: 550px;
+		overflow: scroll;
+	}
+	#table {
+		font-size: 9px;
+		font-weight: bold;
+		white-space: pre;
+	}
+	#table thead, tr {
+		font-size: 9px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+	#table td {
+		font-size: 9px;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+}
